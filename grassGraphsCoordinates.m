@@ -1,3 +1,4 @@
+% ggc = grassGraphsCoordinates(X, plotUVecs, p);
 % This function returns the GrassGraphs coordinates of a 2D or 3D
 % pointset. This means that given a pointset, you are provided with a 3D
 % set of affine invariant coordinates regardless of whether the original
@@ -36,6 +37,9 @@
 
 % % The k in this case is just the kth row of the allperms matrix.
 % -------------------------------------------------------------------------
+% p = grassGraphsParams_Clean; % GrassGraphs parameters.
+% plotUvecs = 1; 
+
 
 function ggc = grassGraphsCoordinates(X, plotUVecs, p)
 
@@ -46,7 +50,7 @@ if (numXRow < numXCol)
 end
 
 %% Flags.
-plotLBO = 1;     % Display the LBO eigenvectors.
+plotLBO = 0;     % Display the LBO eigenvectors.
 dispEigVals = 0; % Display the eigenvalues of the LBO representation.
 
 %% Mean subtraction cases. 
