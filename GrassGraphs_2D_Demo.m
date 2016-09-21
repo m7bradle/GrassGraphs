@@ -47,7 +47,7 @@ Y = Y(:,1:2);  % Keep only the first 2 dimensions.
 
 % --------------- Randomizing the correspondences.-------------------------
 randVec = randperm(numShPoints); % Randomize the points. 
-Y = Y(randVec,:);
+% Y = Y(randVec,:);
 % -------------------------------------------------------------------------
 
 if (plotOrigShape == 1) % Plot the original shapes

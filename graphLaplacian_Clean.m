@@ -33,8 +33,7 @@
 % -------------------------------------------------------------------------
 function L = graphLaplacian_Clean(data, p)
 
-A = pdist2(data, data).^2;    % Squared distance matrix. 
-
+A = pdist2(data, data).^2;    % Squared distance matrix.
 A(A > p.Epsilon) = 0;       % Create the epsilon graph. 
 A = sparse(A);              % Euclidean distance weighted adjacency matrix. 
 connPos = logical(A == 0);  % Connection positions.
