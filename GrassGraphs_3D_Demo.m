@@ -13,6 +13,9 @@
 % 
 %     You should have received a copy of the GNU General Public License
 %     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%   
+%     mmoyou@my.fit.edu
+%     Information Characterization and Exploitation (ICE) Lab
 % ------------------------------------------------------------------------------
 
 % GrassGraphs 2D Affine Matching Algorithm. 
