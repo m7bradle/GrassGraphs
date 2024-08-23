@@ -103,7 +103,9 @@ if (strcmp(p.CorrMethod, 'minDistThrowOut'))
         
         % Add random points to the target correspondence points.
         targCorrPoints = [targCorrPoints; origTargData(randInd,:)];
-        disp('No correspondences so random ones are taken');
+        %disp('No correspondences so random ones are taken');
+     else
+          disp(append('found correspondances: ', mat2str(numCorr)))
     end 
 end
 
