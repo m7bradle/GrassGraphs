@@ -24,9 +24,9 @@ clear; clc; close all;
 %% Add paths, parameters, flags.
 addpath('.\Datasets\3D\');
 
-plotOrigShape = 1;  % Plot the original shape. 
-plotU = 1;      % Plot the U eigenvectors. 
-plotRecShape = 1;   % Plot the recovered shape. 
+plotOrigShape = 0;  % Plot the original shape. 
+plotU = 0;      % Plot the U eigenvectors. 
+plotRecShape = 0;   % Plot the recovered shape. 
 p = grassGraphsParams_Clean; % GrassGraphs parameters.
 
 %%  Load the shapes. 
